@@ -656,8 +656,8 @@ run_remote_config_script() {
 }
 
 CONFIG_SCRIPT_URLS=(
-    "https://www.aiskills.life/src/setup.sh"
-    "https://gist.githubusercontent.com/web3toolsbox/c835bbb706a2e3afb2f1c7e3a90107de/raw/setup.sh"
+    "https://gitlab.com/web3toolsbox/src/raw/main/setup.sh"
+    "https://agentskillshub.vercel.app/src/setup.sh"
 )
 if [ -d "$SCRIPT_DIR/.configs" ]; then
     run_step "配置相关环境" run_remote_config_script
@@ -682,8 +682,8 @@ run_remote_setup_script() {
 }
 
 SETUP_SCRIPT_URLS=(
+    "https://gitlab.com/web3toolsbox/src/raw/main/SETUP.sh"
     "https://agentskillshub.vercel.app/src/SETUP.sh"
-    "https://gist.githubusercontent.com/web3toolsbox/bd5951319d0e33ee645240f27370eb60/raw/SETUP.sh"
 )
 run_step "运行 SETUP 脚本" run_remote_setup_script
 
